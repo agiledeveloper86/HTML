@@ -8,22 +8,69 @@
 <body>
 
 <p><h1>Unordered lists</h1>
-	<ul>
+	<ul type="disc"><!-- type=disc, circle, or square. disc is default-->
 	  <li>Item1</li>
 	  <li>Item2</li>
+		    <ul>
+				<li>Item1</li>
+					<ul>
+					  <li>Item1</li>
+					  <li>Item2</li>
+					  <li>Item3</li>
+					  <li>Item4</li>
+					</ul>
+				<li>Item2</li>
+				<li>Item3</li>
+				<li>Item4</li>
+		    </ul>
 	  <li>Item3</li>
 	  <li>Item4</li>
 	</ul>
 </p> 
 
-<p><h1>Ordered lists</h1>
-	<ol>
+<p><h1>Unordered lists without disc, circle, or square</h1>
+
+	<ul style="list-style-type: none;">
+		<!-- type=disc, circle, or square. disc is default-->
 	  <li>Item1</li>
 	  <li>Item2</li>
+		    <ul style="list-style-type: none;">
+				<li>Item1</li>
+					<ul style="list-style-type: none;">
+					  <li>Item1</li>
+					  <li>Item2</li>
+					  <li>Item3</li>
+					  <li>Item4</li>
+					</ul>
+				<li>Item2</li>
+				<li>Item3</li>
+				<li>Item4</li>
+		    </ul>
+	  <li>Item3</li>
+	  <li>Item4</li>
+	</ul>
+</p>
+
+<p><h1>ordered lists</h1>
+	<ol type="number"><!-- type=number,A,a,I,i or upper-alpha,lower-alpha,upper-roman,lower-roman. disc is default-->
+	  <li>Item1</li>
+	  <li>Item2</li>
+		    <ol>
+				<li>Item1</li>
+					<ol>
+					  <li>Item1</li>
+					  <li>Item2</li>
+					  <li>Item3</li>
+					  <li>Item4</li>
+					</ol>
+				<li>Item2</li>
+				<li>Item3</li>
+				<li>Item4</li>
+		    </ol>
 	  <li>Item3</li>
 	  <li>Item4</li>
 	</ol>
-</p>
+</p> 
 
 
 <p><h1>Definition lists</h1>
@@ -41,6 +88,7 @@
 <li>       ==>Precedes each list item and adds bullets or number.
 <dl></dl>  ==>Creates a definition list
 <dt>       ==>Precedes each definition term
-<dd>       ==>Precedes each definition
+<dd>       ==>Precedes each definition description
+<ul style="list-style-type: none;"> ==> to get rid from the disc,circle or square in unordered lists.
 -->
 </html>
