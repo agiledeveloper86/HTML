@@ -1,8 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>lists</title>
-<!--CSS LINK -->
-<!--JS LINK -->
+<meta chrset="utf-8" />
+<title>Basic HTML TEMPLATE</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<style> 
+#wob ul
+{
+	list-style-type: none;
+}
+</style>
+<script type="text/javascript" src="main.js"></script>
 <!--OTHER METATAG LINK -->
 </head>
 <body>
@@ -28,15 +36,15 @@
 	</ul>
 </p> 
 
-<p><h1>Unordered lists without disc, circle, or square</h1>
+<div id="wob">
+<h1>Unordered lists without disc, circle, or square</h1>
 
-	<ul style="list-style-type: none;">
-		<!-- type=disc, circle, or square. disc is default-->
-	  <li>Item1</li>
+	<ul >
+      <li>Item1</li>
 	  <li>Item2</li>
-		    <ul style="list-style-type: none;">
+		    <ul>
 				<li>Item1</li>
-					<ul style="list-style-type: none;">
+					<ul>
 					  <li>Item1</li>
 					  <li>Item2</li>
 					  <li>Item3</li>
@@ -50,8 +58,9 @@
 	  <li>Item4</li>
 	</ul>
 </p>
+</div>
 
-<p><h1>ordered lists</h1>
+<p><h1>rdered lists</h1>
 	<ol type="number"><!-- type=number,A,a,I,i or upper-alpha,lower-alpha,upper-roman,lower-roman. disc is default-->
 	  <li>Item1</li>
 	  <li>Item2</li>
@@ -83,12 +92,14 @@
 </p>
 </body>
 <!-- 
-<ul></ul>  ==>Creates a bulleted list
-<ol></ol>  ==>Creates a numbered list
-<li>       ==>Precedes each list item and adds bullets or number.
-<dl></dl>  ==>Creates a definition list
-<dt>       ==>Precedes each definition term
-<dd>       ==>Precedes each definition description
-<ul style="list-style-type: none;"> ==> to get rid from the disc,circle or square in unordered lists.
+<ul></ul> ==>Creates a bulleted list attributes
+          ==>type=disc, circle, or square. disc is default...
+<ol></ol> ==>Creates a numbered list  attributes
+          ==>type=number,A,a,I,i or upper-alpha,lower-alpha,upper-roman,lower-roman. disc is default
+<li> ==>Precedes each list item and adds bullets or number.
+<dl></dl> ==>Creates a definition list
+<dt> ==>Precedes each definition term
+<dd> ==>Precedes each definition description
+<ul style="list-style-type: none;"> ==>to get rid from the disc,circle or square in unordered lists.
 -->
 </html>
